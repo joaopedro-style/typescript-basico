@@ -16,7 +16,10 @@
     "noEmitOnError": true,
 
     // Permitie importa módulos ES também
-    "esModuleInterop": true
+    "esModuleInterop": true,
+
+    // Remove comentários da versão final do JS
+    "removeComments": true
   },
   // Indica quais arquivos/extensões o compilador deve buscar
   "include": ["*.ts"],
