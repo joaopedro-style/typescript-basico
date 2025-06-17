@@ -12,11 +12,11 @@ Atenção: O parâmetro cor deve ser do tipo Cor e aceitar somente 5 cores.
 
 type Cores = "Preto" | "Vermelho" | "Laranja" | "Dourado" | "Amarelo";
 
-function exibirCor(nome: string, cor?: Cores) {
+function exibirCor(nome: string, cor?: Cores): string {
   if (cor) {
     return `O ${nome} gosta da cor ${cor}`;
   }
-  return `Olá ${nome}`;
+  return `Olá ${nome} você não escolheu uma cor.`;
 }
 
 console.log(exibirCor("João Pedro", "Dourado"));
