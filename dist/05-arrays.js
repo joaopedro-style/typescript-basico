@@ -18,3 +18,6 @@ const linguagens = [
 console.log(linguagens[0][0]);
 console.log(linguagens[1][0]);
 (0, modulos_1.separador)();
+const numeros = [700, 1700, 17000, 27000, 37000];
+const soma = numeros.reduce((acumulador, numero) => acumulador + numero, 0);
+console.log(soma);

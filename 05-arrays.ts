@@ -37,3 +37,12 @@ separador();
 1) Crie um array de números
 2) Calcule a soma de todos os elementos e guarde numa variável
 3) Mostre o resultado da soma */
+
+const numeros: number[] = [700, 1700, 17000, 27000, 37000];
+// versão tipada implicitamente (mais concisa)
+const soma = numeros.reduce((acumulador, numero) => acumulador + numero, 0);
+
+console.log(soma);
+
+// versão Tipada explicitamente (mais verbosa)
+// const soma:number = numeros.reduce((acumulador:number, numero:number): number => acumulador + numero, 0);
